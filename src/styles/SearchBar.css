@@ -1,0 +1,55 @@
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-bar input::placeholder {
+    color: #aaa;
+}
+
+.search-bar input:focus {
+    border-color: #0077b6;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 119, 182, 0.5);
+}
+/* Styles for the search bar container */
+.search-bar {
+    width: 100%; /* Full width of the screen */
+    padding: 0 20px; /* Add padding on the sides */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    margin-bottom: 20px; /* Space below the search bar */
+}
+
+/* Styles for the search input field */
+.search-bar input {
+    width: 100%; /* Full width of the container */
+    padding: 12px; /* Padding inside the input field */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ddd; /* Border color */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow */
+    font-size: 16px; /* Font size */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .search-bar {
+        padding: 0 10px; /* Reduce padding on smaller screens */
+    }
+
+    .search-bar input {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}

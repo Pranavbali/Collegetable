@@ -1,0 +1,190 @@
+/* Table container */
+.table {
+    margin: 0 auto;
+    max-width: 1200px;
+    border-collapse: collapse;
+}
+
+/* Table header styling */
+.table-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr;
+    gap: 10px;
+    background-color: #0077b6;
+    color: white;
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Table row styling */
+.table-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr;
+    gap: 10px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+/* Center align all text in table row fields */
+.table-row > div {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align text */
+}
+
+/* Center align the Rank column specifically */
+.table-row > div:nth-child(1) {
+    text-align: center;
+}
+
+/* College details styling */
+.table-row .college-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.table-row .college-details .name {
+    font-weight: bold;
+    color: #03045e;
+    margin-bottom: 5px;
+    text-align: center; /* Center align name text */
+}
+
+.table-row .college-details .location {
+    font-size: 0.9em;
+    color: #0077b6;
+    text-align: center; /* Center align location text */
+}
+
+/* College buttons styling */
+.college-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px;
+    justify-content: center; /* Center align buttons */
+}
+
+.college-buttons .btn {
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.college-buttons .btn:hover {
+    background-color: #005f73;
+}
+
+/* Comparison section styling */
+.table-row .compare {
+    text-align: right;
+    color: #0096c7;
+}
+
+.table-row .compare input {
+    margin-right: 5px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .table-header {
+        grid-template-columns: repeat(6, 1fr);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .table-row {
+        grid-template-columns: repeat(6, 1fr);
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+
+    .table-row .college-details {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .table-header {
+        padding: 10px;
+    }
+
+    .table-row {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .table-row .college-details {
+        flex: 1;
+    }
+
+    .table-row .compare {
+        text-align: left;
+    }
+}
+
+/* Additional styles for search and sort buttons */
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.sort-buttons {
+    margin-bottom: 20px;
+}
+
+.sort-buttons select {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #0077b6;
+    color: white;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+/* Styling for the Compare Fees button */
+.compare-fees-btn {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .compare-fees-btn:hover {
+    background-color: #005f99;
+  }
+  
+  /* Center-align all the content in the cells */
+  .table-row div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
